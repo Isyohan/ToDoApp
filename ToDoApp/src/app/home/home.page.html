@@ -17,4 +17,45 @@
     <strong>Ready to create an app?</strong>
     <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
   </div>
+
+  <ion-tabs>
+    <ion-tab>
+      <ion-tab-bar slot="bottom">
+        <ion-tab-button (click)="test()">
+          <!--
+          <ion-icon name=""></ion-icon>
+          -->
+          <ion-text color="secondary" style="font-size:2.5em;font-weight:800" >D</ion-text>
+          <!--<ion-label>Daily</ion-label>-->
+        </ion-tab-button>
+  
+        <ion-tab-button tab="weekly">
+          <!--
+          <ion-icon name=""></ion-icon>
+          -->
+          <ion-text style="font-size:2.5em;font-weight: 800">W</ion-text>
+          <!--<ion-label>Weekly</ion-label>-->
+        </ion-tab-button>
+      
+        <ion-tab-button (click)="addNewItem()">
+          <ion-icon name="add"></ion-icon>
+        </ion-tab-button>
+
+        <ion-tab-button tab="schedule">
+          <ion-icon name="calendar"></ion-icon>
+       </ion-tab-button>
+  
+        <ion-tab-button tab="about">
+          <ion-icon name="cog"></ion-icon>
+        </ion-tab-button>
+      
+      </ion-tab-bar>
+    </ion-tab>
+  </ion-tabs>
+
+  <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+    <ion-fab-button (click)="addNewItem()">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
 </ion-content>
