@@ -1,4 +1,3 @@
-<!---->
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-item lines="none">
@@ -37,52 +36,19 @@
 
       <ion-item button (click)="update(item)">
         <ion-icon name="create-outline"></ion-icon>
-        <p>Update</p>
+        <p style="font-size:small " >Update</p>
       </ion-item>
 
       <ion-item button (click)="delete(item.key)">
         <ion-icon name="trash-outline"></ion-icon>
-        <p>Cancel</p>
+        <p style="font-size:small " >Cancel</p>
       </ion-item>
     </ion-row>
   </ion-card>
-<!--
-  <ion-tabs>
-    <ion-tab>
-      <ion-tab-bar slot="bottom">
-        <ion-tab-button (click)="test()">
-          
-          <ion-text color="primary" style="font-size:2.5em;font-weight:800" >D</ion-text>
 
-        </ion-tab-button>
-  
-        <ion-tab-button tab="weekly">
-          
-          <ion-text style="font-size:2.5em;font-weight: 800">W</ion-text>
-          
-        </ion-tab-button>
-      
-        <ion-tab-button (click)="addNewItem()">
-          <ion-icon name="add"></ion-icon>
-        </ion-tab-button>
-
-        <ion-tab-button tab="schedule">
-          <ion-icon name="calendar"></ion-icon>
-       </ion-tab-button>
-  
-        <ion-tab-button tab="about">
-          <ion-icon name="cog"></ion-icon>
-        </ion-tab-button>
-      
-      </ion-tab-bar>
-    </ion-tab>
-  </ion-tabs>
--->
   <ion-fab vertical="bottom" horizontal="center" slot="fixed">
     <ion-fab-button (click)="addNewItem()">
       <ion-icon name="add"></ion-icon>
     </ion-fab-button>
   </ion-fab>
 </ion-content>
-<!---->
-
